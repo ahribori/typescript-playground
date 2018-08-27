@@ -1,0 +1,20 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ES5",
+    "module": "commonjs",
+    "typeRoots" : ["./node_modules/@types", "./@types"],
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false
+  }
+}
