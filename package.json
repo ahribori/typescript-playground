@@ -12,10 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.4.22"
+    "mongoose": "^5.4.22",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.3.0"
   },
   "devDependencies": {
     "@types/mongoose": "^5.3.24",
+    "@types/sequelize": "^4.27.46",
     "nodemon": "^1.18.3",
     "prettier": "^1.16.4",
     "rimraf": "^2.6.2",
