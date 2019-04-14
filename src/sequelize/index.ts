@@ -15,17 +15,17 @@ class User extends Model<User> {
 
 User.init(
   {
-    id: {
-      type: new DataTypes.INTEGER.UNSIGNED(),
-      autoIncrement: true,
-      primaryKey: true,
-    },
-    name: {
-      type: new DataTypes.STRING(30),
-      allowNull: false,
-    },
     age: {
       type: new DataTypes.INTEGER.UNSIGNED(),
+    },
+    id: {
+      autoIncrement: true,
+      primaryKey: true,
+      type: new DataTypes.INTEGER.UNSIGNED(),
+    },
+    name: {
+      allowNull: false,
+      type: new DataTypes.STRING(30),
     },
   },
   {

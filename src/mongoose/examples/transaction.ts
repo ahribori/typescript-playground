@@ -24,8 +24,8 @@ export const transactionalTask = async () => {
     .then(() => Customer.findOne({ name: 'daniel' }))
     .then(doc => console.log(doc))
     .catch(e => {
-      console.log(e)
-    })
+      console.log(e);
+    });
   // const session = await mongoose.startSession();
   // session.startTransaction();
   // try {

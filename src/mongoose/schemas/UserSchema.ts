@@ -9,11 +9,11 @@ export interface IUser extends mongoose.Document {
 }
 
 const userSchema: mongoose.Schema = new mongoose.Schema({
+  age: { type: Number, required: true },
+  createdAt: { type: Date, default: Date.now },
+  hidden: { type: Boolean, default: false },
   id: { type: String, unique: true },
   name: { type: String, required: true },
-  age: { type: Number, required: true },
-  hidden: { type: Boolean, default: false },
-  createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
 });
 
