@@ -10,6 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -23,6 +26,7 @@
     "@types/mongoose": "^5.3.24",
     "@types/sequelize": "^4.27.46",
     "nodemon": "^1.18.3",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.16.4",
     "rimraf": "^2.6.2",
     "ts-node": "^7.0.1",
