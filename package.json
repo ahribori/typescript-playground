@@ -8,11 +8,12 @@
     "build": "rimraf dist && tsc",
     "start": "node dist",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --config .prettierrc --write \"src/**/*.ts\"",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run prettier && npm run lint"
     }
   },
   "author": "",
